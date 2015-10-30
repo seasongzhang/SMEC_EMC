@@ -1,10 +1,10 @@
-﻿import Image
+﻿from PIL import Image
 import pickle
 
 RED = (255,0,0,255)
 BLUE = (0,255,255,255)
 
-im = Image.open(r"d:\Workspace\Python27\SMEC_EMC_FIG\TestData\fig1.png")
+im = Image.open(r"E:\Workspace\Python27\SMEC_EMC_FIG\TestData\fig1.png")
 im_data = list(im.getdata())
 width = im.size[0]
 height = im.size[1]
