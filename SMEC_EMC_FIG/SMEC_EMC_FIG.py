@@ -2,6 +2,9 @@
 from PIL import Image
 import pickle
 import os,re
+import numpy
+import matplotlib.pyplot as pl
+#pl.rcParams['font.sans-serif'] = ['SimHei'] # For plotting Chinese characters
 
 
 
@@ -11,7 +14,7 @@ class EmcSpecPng:
     COLOR_SPECTRUM = (0,255,255,255)
     GREEN = (0,255,0,255)
     CROP_BOX = (321,734,2300,2138) #
-    HEIGHT_DB = 140.0
+    HEIGHT_DB = 120.0
 
     def __init__(self, file_path):
         self.file_path = file_path
@@ -87,12 +90,30 @@ class EmcSpecPng:
             for sp in self.raw_spectrum:
                 print('%(freq).2f %(dB).2f' % {'freq':sp[0],'dB':sp[1]},file=f,sep='')
 
+    def dump2fig(self):
+        pl.figure()
+        fig_name = os.path.splitext(self.file_path)[0] + "_plot.png"
+        #data_len = len(self.raw_spectrum[0])
+        plot_data = numpy.transpose(self.raw_spectrum)
+        plot_data = list(plot_data)
+        pl.semilogx(plot_data[0],plot_data[1],basex = 10)
+        pl.title("AAA")
+        pl.xlim(plot_data[0][0],plot_data[0][-1])
+        pl.ylim(-20,100)
+        pl.axhline(y=46, xmin=0, xmax=0.8846, color = 'r')
+        pl.axhline(y=53, xmin=0.8846, xmax=1, color = 'r')
+        pl.axvline(x=230, ymin=0.55, ymax=0.6083, color = 'r')
+        pl.xlabel("Frequency")
+        pl.ylabel("Level")
+        pl.grid(b=True,which='both')
+        pl.savefig(fig_name)
+
 if __name__ == "__main__":
     dir_path = u"E:\Tasks\EMC\P1_Test"
     files = os.listdir(dir_path)
     for file in files:
         file_path = os.path.join(dir_path,file)
-        if re.search(u".png",file):
+        if re.search(u"P1_1.png",file):
             print("Processing "+file)
             png = EmcSpecPng(file_path)
             try:
@@ -101,5 +122,5 @@ if __name__ == "__main__":
                 print("Png size not corrected!")
             else:
                 png.read_data()
-                png.dump2txt()
-
+                #png.dump2txt()
+                png.dump2fig()
