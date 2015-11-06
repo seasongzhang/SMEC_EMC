@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>de66eedd-c7ec-41f4-b1ab-107d0ab5e5a0</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SMEC_EMC_FIG.py</StartupFile>
+    <StartupFile>datachk.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="datachk.py" />
     <Compile Include="SMEC_EMC_FIG.py" />
   </ItemGroup>
   <PropertyGroup>
