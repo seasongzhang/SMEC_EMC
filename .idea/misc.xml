@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
+=======
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DependencyValidationManager">
+    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+  </component>
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+>>>>>>> ecd16cff357eccdc649f5a70a3cc3e2b4772ad5c
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -10,5 +20,15 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.5.0 (C:\Users\Elaine\AppData\Local\Programs\Python\Python35\python.exe)" project-jdk-type="Python SDK" />
+=======
+  <component name="ProjectModuleManager">
+    <modules />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7.10 (C:\Python27\python.exe)" project-jdk-type="Python SDK" />
+  <component name="RunManager">
+    <list size="0" />
+  </component>
+>>>>>>> ecd16cff357eccdc649f5a70a3cc3e2b4772ad5c
 </project>

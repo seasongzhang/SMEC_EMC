@@ -14,7 +14,8 @@
 
 - **测试小结：**
 
-![STEP1](..\testdata\MPS1\_P1\_CAN\photos\step_1.png)
+![abc](..\testdata\MPS1_P1_CAN\photos\step_1.png)
+
 ####STEP 2
 - **测试条件描述：**[`层召`](#层召)12V电源线不连在[`MPS1`](#MPS1)上~[`MPS1`](#MPS1)至[`P1板`](#P1板)的电源线上无卡扣磁环~[`MPS1`](#MPS1)=SWT30-522/AMI HFP(扶梯使用)~
 
@@ -111,7 +112,8 @@ ___
 
 - <span id=层召12V电源线>`层召12V电源线`</span>：在MPS1向P1板供电的电源线上抽头2根，作为层召的电源线
 
-- <span id=P1板>`P1板`</span>：P203778B000
+- <span id=P1板>`P1板`</span>：P203778B000。 
 
 - <span id=MPS1>`MPS1`</span>：为P1板和层召供电的电源，在本次测试中使用了三款电源，分别是SWT30-522/AMI HFP(扶梯使用)、RT-3-522(LEHY-III使用)以及CUT75-522/B(高速梯使用)
 
+![abc](..\testdata\MPS1_P1_CAN\photos\part_3_1.jpg)

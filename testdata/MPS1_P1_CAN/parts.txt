@@ -16,7 +16,7 @@ part_photos:
 part_number:4
 part_name:MPS1
 part_description:为P1板和层召供电的电源，在本次测试中使用了三款电源，分别是SWT30-522/AMI HFP(扶梯使用)、RT-3-522(LEHY-III使用)以及CUT75-522/B(高速梯使用)
-part_photos:
+part_photos:part_4_1
 
 part_number:
 part_name:

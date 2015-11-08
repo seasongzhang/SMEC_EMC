@@ -1,19 +1,20 @@
-﻿from __future__ import print_function
+﻿# -*- coding: utf-8 -*-
+
+from __future__ import print_function
 from PIL import Image
 import pickle
-import os,re
+import os
+import re
 import numpy
 import matplotlib.pyplot as pl
-#pl.rcParams['font.sans-serif'] = ['SimHei'] # For plotting Chinese characters
-
-
+# pl.rcParams['font.sans-serif'] = ['SimHei'] # For plotting Chinese characters
 
 class EmcSpecPng:
 
-    COLOR_LIMIT = (255,0,0,255)
-    COLOR_SPECTRUM = (0,255,255,255)
-    GREEN = (0,255,0,255)
-    CROP_BOX = (321,734,2300,2138) #
+    COLOR_LIMIT = (255, 0, 0, 255)
+    COLOR_SPECTRUM = (0, 255, 255, 255)
+    GREEN = (0, 255, 0, 255)
+    CROP_BOX = (321, 734, 2300, 2138) #
     HEIGHT_DB = 120.0
 
     def __init__(self, file_path):
@@ -34,9 +35,10 @@ class EmcSpecPng:
         height = region.size[1]
         pixels_per_dB = height / EmcSpecPng.HEIGHT_DB
 
-        #region.show()
+        # region.show()
         
-        """According to RGB value of pixels, select pixels of limit named limit_list
+        """
+        According to RGB value of pixels, select pixels of limit named limit_list
         and spectrum named peak_value_list. Since region.getdata() get pixels line by line,
         so the limit_list and peak_list are not lined in frequency sequence. Thus sort() is 
         used to sort. Besides, we only care about the max spectrum point for each frequency 
@@ -109,7 +111,7 @@ class EmcSpecPng:
         pl.savefig(fig_name)
 
 if __name__ == "__main__":
-    dir_path = u"E:\Tasks\EMC\P1_Test"
+    dir_path = u"E:\\SeaGit\\SMEC_EMC_FIG\\P1_Test"
     files = os.listdir(dir_path)
     for file in files:
         file_path = os.path.join(dir_path,file)
