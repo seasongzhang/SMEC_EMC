@@ -30,7 +30,7 @@ step_ref:2,3
 step_description:1B1A,2A,3B1B
 step_reason:尝试试验
 step_outputfile:DCDC_WithCase_NoC2C_DCDCGND
-step_result:(30-51)
+step_result:(30-51)，不是很好
 step_summary:2种接地共存时，推测DCDC电源外壳的干扰主要通过容性耦合至屏蔽壳并通过编织带发射，而不是通过黄绿线。
 step_spectrum:
 

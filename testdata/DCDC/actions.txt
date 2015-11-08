@@ -1,57 +1,57 @@
 action_number:1A
-action_description:"DCDC"放置在"屏蔽壳"外
+action_description:DCDC放置在屏蔽壳外
 action_photos:
 
 action_number:1B
-action_description:"DCDC"放置在"屏蔽壳"内
+action_description:DCDC放置在屏蔽壳内
 action_photos:
 
 action_number:1B1A
-action_description:"DCDC"外壳与"屏蔽壳"不直接接触，垫了三本书
+action_description:DCDC外壳与屏蔽壳不直接接触，垫了三本书
 action_photos:
 
 action_number:1B1B
-action_description:"DCDC"外壳与"屏蔽壳"直接接触
+action_description:DCDC外壳与屏蔽壳直接接触
 action_photos:
 
 action_number:2A
-action_description:"DCDC"外壳通过"黄绿线"接"三相电源"地
+action_description:DCDC外壳通过黄绿线接三相电源地
 action_photos:
 
 action_number:2B
-action_description:"DCDC"外壳不通过线缆或线接地
+action_description:DCDC外壳不通过线缆或线接地
 action_photos:
 
 action_number:3A
-action_description:"屏蔽壳"通过"黄绿线"接"三相电源"地
+action_description:屏蔽壳通过黄绿线接三相电源地
 action_photos:
 
 action_number:3B
-action_description:"屏蔽壳"通过"短编织带"接地，使用铜箔粘结地面
+action_description:屏蔽壳通过短编织带接地，使用铜箔粘结地面
 action_photos:
 
 action_number:3C
-action_description:"屏蔽壳"通过"长编织带"接地，使用铜箔粘结地面，
+action_description:屏蔽壳通过长编织带接地，使用铜箔粘结地面，
 action_photos:
 
 action_number:3B1A
-action_description:用扎带将"短编织带"与"电源电缆"扎紧
+action_description:用扎带将短编织带与电源电缆扎紧
 action_photos:
 
 action_number:3B1B
-action_description:"短编织带"直接下垂至地面
+action_description:短编织带直接下垂至地面
 action_photos:
 
 action_number:3C1A
-action_description:用扎带将"长编织带"与"电源电缆"扎紧
+action_description:用扎带将长编织带与电源电缆扎紧
 action_photos:
 
 action_number:3C1B
-action_description:"长编织带"直接下垂至地面，接地点仅可能靠近转台的转轴
+action_description:长编织带直接下垂至地面，接地点仅可能靠近转台的转轴
 action_photos:
 
 action_number:3D
-action_description:"屏蔽壳"不接地
+action_description:屏蔽壳不接地
 action_photos:
 
 action_number:4A
