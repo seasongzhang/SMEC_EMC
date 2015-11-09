@@ -1,4 +1,4 @@
-project_date:
-project_description:
-project_summary:
+project_date:2015/10/30~2015/11/2
+project_description:本次试验是为LEHY-H EMC分离柜的测试作基础准备。试验主要拓扑是：由暗室提供125VDC的直流电源，为MPS1供电，MPS1输出的+12V为P1板和层召供电。原计划通过对比试验来比较层召的CAN通讯的辐射发射水平，但在实际测试中，发现不同的MPS1的辐射水平不一致，因此在实验中穿插了对三种MPS1的比较。
+project_summary:①三种MPS1的EMC辐射发射性能：RT-3-522(LEHY-III使用) 优于 CUT75-522/B(高速梯使用) 优于 SWT30-522/AMI HFP(扶梯使用)；②在连接层召的CAN和电源线之后，在40MHz附近恶化明显；③在MPS1和P1板的电源线上增加X46CC-11卡扣磁环，有一定的效果，但并不明显；
 
