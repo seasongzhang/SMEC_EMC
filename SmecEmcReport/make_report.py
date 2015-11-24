@@ -1,10 +1,11 @@
 ﻿# -*-coding:utf-8-*-
-import os
 import codecs
-import re
-import numpy
-import matplotlib.pyplot as pl
+import os
 import pickle
+import re
+
+import matplotlib.pyplot as pl
+import numpy
 
 import gather_data
 
@@ -26,6 +27,7 @@ class ReportMaker(object):
             :param args: a list, in which sequence the raw data txt is listed.
             :param file_name: the raw data txt file name.
         """
+        print("Reading information from " + file_name)
         if os.path.exists(os.path.join(self.dir_path, file_name)):
             items = []
             with codecs.open(os.path.join(self.dir_path, file_name), encoding='utf-8') as f:
@@ -49,24 +51,24 @@ class ReportMaker(object):
             return []
 
     def gather_infos(self):
-        self.parts = self.read_info("parts.txt", "part_number", "part_name", "part_description", "part_photos")
-        self.actions = self.read_info("actions.txt", "action_number", "action_description", "action_photos")
+        self.parts = self.read_info("parts.txt", "part_number", "part_name", "part_description")
+        self.actions = self.read_info("actions.txt", "action_number", "action_description")
         self.steps = self.read_info("steps.txt", "step_sequence", "step_ref", "step_description", "step_reason",
-                                "step_outputfile", "step_result", "step_summary", "step_spectrum")
+                                "step_outputfile", "step_result", "step_summary")
         self.project = self.read_info("project.txt", "project_date", "project_description", "project_summary")
 
     def compare_plot(self):
 
-        with open(ur'E:\SeaGit\SmecEmcReport\testdata\MPS1_P1_CAN\data' + ur'\decimal_specs.pkl', 'rb') as f:
-            specs = pickle.load(f)
+        sr = gather_data.SpecReader()
+        specs = sr.gather_specs(self.dir_path + '\data', re_str='.png')
 
         if not len(specs) == len(self.steps):
-            print("Steps number is different from spectrum data number!!!")
+            print("Step number in step.txt must be same as number of .png files!!!")
 
         for (n, step) in enumerate(self.steps):
             compare_list = step[1].split(',')
             pl.figure()
-            plot_name = self.dir_path + ur'\photos\STEP_' + str(n+1) + ur'.png'
+            plot_name = self.dir_path + ur'\images\STEP_' + str(n+1) + ur'.png'
             plot_data = list(numpy.transpose(specs[n]))
             pl.semilogx(plot_data[0], plot_data[1], label=u'STEP'+str(n+1), basex=10)
             if not compare_list == [u'']:
@@ -76,8 +78,6 @@ class ReportMaker(object):
             pl.title("STEP"+str(n+1))
             pl.xlim(plot_data[0][0], plot_data[0][-1])
             pl.ylim(-20,100)
-            # pl.xscale('symlog')
-            # pl.yscale('symlog', linthreshy=0.015)
             pl.xticks([30,40,50,80,100,200,300],['30','40','50','80','100','200','300'])
             pl.yticks([-20,0,20,40,46,53,60,80,100],['-20','0','20','40','46','53','60','80','100'])
             pl.axhline(y=46, xmin=0, xmax=0.8846, color='r')
@@ -105,9 +105,11 @@ class ReportMaker(object):
         actions_dict = dict((action[0], action[1]) for action in self.actions)
 
         with codecs.open(os.path.join(self.dir_path, "report.md"), "w",encoding='utf-8') as f:
+            # 测试项目描述
             f.write(u"##1.测试日期：\r\n" + self.project[0][0] + "\r\n")
             f.write(u"##2.测试描述：\r\n" + self.project[0][1] + "\r\n")
             f.write(u"##3.测试总结：\r\n" + self.project[0][2] + "\r\n")
+            # 测试项目步骤及对比曲线
             f.write(u"##4.测试步骤：\r\n")
             for step in self.steps:
                 f.write("####STEP " + step[0] + "\r\n")
@@ -118,17 +120,36 @@ class ReportMaker(object):
                 f.write(u'- **步骤依据：**' + step[3] + '\r\n'*2)
                 f.write(u'- **测试结果：**' + step[5] + '\r\n'*2)
                 f.write(u'- **测试小结：**' + step[6] + '\r\n'*2)
-                x = self.dir_path + u'\photos\STEP_' + step[0] + u'.png'
-                print(os.path.exists(x))
+                x = self.dir_path + u'\images\STEP_' + step[0] + u'.png'
                 if os.path.exists(x):
-                    print("Hello!")
-                    f.write(u'![STEP' + step[0] + ur'](.\photos\STEP_' + step[0] +u'.png)\r\n')
+                    f.write(u'![STEP' + step[0] + ur'](.\images\STEP_' + step[0] +u'.png)\r\n')
 
+            # 部件表
             f.write(u'___\r\n')
             f.write(u"#部件表：\r\n")
             for part in [p for p in self.parts if p[1] != '']:
                 f.write(u'- <span id='+part[1]+u'>`'+part[1]+u'`</span>')
                 f.write(u'：' + part[2] + u'\r\n'*2)
+                part_photos = [ff for ff in os.listdir(self.dir_path+u'\images') if re.match('part_'+part[0], ff)]
+                for (n, pp) in enumerate(part_photos):
+                    f.write(u'![part_'+part[0]+'_'+str(n+1)+u'](.\\images\\' + pp + u')\r\n')
+                f.write('\r\n'*2)
+
+
+            # 措施表
+            f.write(u'___\r\n')
+            f.write(u'#措施表：\r\n')
+            for action in [a for a in self.actions if a[1] != '']:
+                f.write(u'- ' + action[1] + u'\r\n'*2)
+                action_photos = [ff for ff in os.listdir(self.dir_path+u'\images') if re.match('action_'+action[0], ff)]
+                for (n, ap) in enumerate(action_photos):
+                    f.write(u'![action_'+action[0]+'_'+str(n+1)+u'](.\\images\\' + ap + u')')
+                f.write('\r\n'*2)
+
+
+
+
+
 
 
 if __name__ == "__main__":

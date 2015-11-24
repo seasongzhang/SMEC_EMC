@@ -1,6 +1,7 @@
 ﻿# -*- coding: utf-8 -*-
 
 from __future__ import print_function
+from __future__ import unicode_literals
 
 from PIL import Image
 import pickle
@@ -8,10 +9,7 @@ import os
 import re
 
 
-# noinspection PyMethodMayBeStatic
 class SpecReader:
-
-
     def __init__(self):
         pass
         """
@@ -47,7 +45,6 @@ class SpecReader:
             used to sort. Besides, we only care about the max spectrum point for each frequency
             point, thus pick_max_point() is applied.
         """
-        data_list = []
         limit_list = []
         peak_list = []
 
@@ -58,31 +55,11 @@ class SpecReader:
             elif region_data[n] == COLOR_SPECTRUM:
                 peak_list.append((n % width, n // width))
 
-        # with open("limit_list.pkl",'wb') as f:
-        #    pickle.dump(limit_list,f)
-        # with open("peak_list.pkl","wb") as f:
-        #    pickle.dump(peak_list,f)
-
-        # with open("limit_list.pkl", 'rb') as f:
-        #     limit_list = pickle.load(f)
-        # with open("peak_list.pkl", "rb") as f:
-        #     peak_list = pickle.load(f)
-
         peak_list.sort()
         limit_list.sort()
 
-        def pick_max_point(xy_list):
-            xy_max_list = []
-            x_list = []
-            for (x, y) in xy_list:
-                if x not in x_list:
-                    x_list.append(x)
-                    xy_max_list.append((x, y))
-            return xy_max_list
-
-        peak_list = pick_max_point(peak_list)  # for each frequency, only keep the max value.
-
-        peak_list2 = [set(xy_list)]
+        s = set([])
+        peak_list = filter(lambda x: False if x[0] in s else s.add(x[0]) or True, peak_list)
 
         # "Transfer spectrum from pixel data to regular data, x-axis is MHz, y-axis is dB"
         decimal_spectrum = [(10 ** (xy[0] / 1300.0) * 30, (46 - (xy[1] - 632) / pixels_per_dB)) for xy in peak_list]
@@ -101,7 +78,7 @@ class SpecReader:
         :return:
         """
         decimal_specs = []
-        files = [f for f in os.listdir(dir_path) if re.match(re_str, f)]
+        files = [f for f in os.listdir(dir_path) if re.search(re_str, f)]
         try:
             files.sort(key=lambda n:int(n.split("_")[1].split('.')[0]))
         except IndexError:
@@ -109,7 +86,7 @@ class SpecReader:
         for file in files:
             file_path = os.path.join(dir_path, file)
             if re.search(re_str, file):
-                print("Processing " + file)
+                print("Reading spectrum data from " + file)
                 try:
                     decimal_specs.append(self.read_spec_from_png(file_path, save2txt=True))
                 except AssertionError:

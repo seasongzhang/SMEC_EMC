@@ -296,7 +296,7 @@ img {
 <h2>2.测试描述：</h2>
 <p>本次试验是为LEHY-H EMC分离柜的测试作基础准备。试验主要拓扑是：由暗室提供125VDC的直流电源，为MPS1供电，MPS1输出的+12V为P1板和层召供电。原计划通过对比试验来比较层召的CAN通讯的辐射发射水平，但在实际测试中，发现不同的MPS1的辐射水平不一致，因此在实验中穿插了对三种MPS1的比较。</p>
 <h2>3.测试总结：</h2>
-<p>①三种MPS1的EMC辐射发射性能：RT-3-522(LEHY-III使用) 优于 CUT75-522/B(高速梯使用) 优于 SWT30-522/AMI HFP(扶梯使用)；②在MPS1和P1板的电源线上增加X46CC-11卡扣磁环，有一定的效果，但并不明显；</p>
+<p>①三种MPS1的EMC辐射发射性能：RT-3-522(LEHY-III使用) 优于 CUT75-522/B(高速梯使用) 优于 SWT30-522/AMI HFP(扶梯使用)；②在连接层召的CAN和电源线之后，在40MHz附近恶化明显；③在MPS1和P1板的电源线上增加X46CC-11卡扣磁环，有一定的效果，但并不明显；</p>
 <h2>4.测试步骤：</h2>
 <h4>STEP 1</h4>
 <ul>
@@ -313,7 +313,7 @@ img {
 <p><strong>测试小结：</strong>扶梯用的MPS1电源辐射发射较强。</p>
 </li>
 </ul>
-<p><img src=".\photos\STEP_1.png" alt="STEP1" /></p>
+<p><img src=".\images\STEP_1.png" alt="STEP1" /></p>
 <h4>STEP 2</h4>
 <ul>
 <li>
@@ -329,7 +329,7 @@ img {
 <p><strong>测试小结：</strong>STEP1中，MPS1上接了两根电源线（终端开路作为天线），从测试结果看，似乎确实天线效应在41MHz附近导致了更高的发射。但是，仅仅约2dB的差距不足以说明问题，仅供参考。</p>
 </li>
 </ul>
-<p><img src=".\photos\STEP_2.png" alt="STEP2" /></p>
+<p><img src=".\images\STEP_2.png" alt="STEP2" /></p>
 <h4>STEP 3</h4>
 <ul>
 <li>
@@ -345,7 +345,7 @@ img {
 <p><strong>测试小结：</strong>说明为P1板供电的电源线(包括MPS1)有较大辐射，干扰会通过电源线进入P1板，加卡扣磁环略有效果</p>
 </li>
 </ul>
-<p><img src=".\photos\STEP_3.png" alt="STEP3" /></p>
+<p><img src=".\images\STEP_3.png" alt="STEP3" /></p>
 <h4>STEP 4</h4>
 <ul>
 <li>
@@ -361,7 +361,7 @@ img {
 <p><strong>测试小结：</strong>LEHY-III的MPS1虽然效率不高且价格贵，但EMC发射性能出众，可能是因为开关速度较慢。</p>
 </li>
 </ul>
-<p><img src=".\photos\STEP_4.png" alt="STEP4" /></p>
+<p><img src=".\images\STEP_4.png" alt="STEP4" /></p>
 <h4>STEP 5</h4>
 <ul>
 <li>
@@ -377,7 +377,7 @@ img {
 <p><strong>测试小结：</strong>高速梯用的MPS1还可以。</p>
 </li>
 </ul>
-<p><img src=".\photos\STEP_5.png" alt="STEP5" /></p>
+<p><img src=".\images\STEP_5.png" alt="STEP5" /></p>
 <h4>STEP 6</h4>
 <ul>
 <li>
@@ -393,7 +393,7 @@ img {
 <p><strong>测试小结：</strong>层召及其数据/电源线的影响很大</p>
 </li>
 </ul>
-<p><img src=".\photos\STEP_6.png" alt="STEP6" /></p>
+<p><img src=".\images\STEP_6.png" alt="STEP6" /></p>
 <h4>STEP 7</h4>
 <ul>
 <li>
@@ -409,69 +409,136 @@ img {
 <p><strong>测试小结：</strong>单纯通过改变线的位置，在某些频段的可能会有改善，但要小心陷阱，可能在另一个频段恶化。</p>
 </li>
 </ul>
-<p><img src=".\photos\STEP_7.png" alt="STEP7" /></p>
+<p><img src=".\images\STEP_7.png" alt="STEP7" /></p>
 <h4>STEP 8</h4>
 <ul>
 <li>
 <p><strong>测试条件描述：</strong><a href="#层召"><code>层召</code></a>12V电源线连在<a href="#MPS1"><code>MPS1</code></a>上~<a href="#层召"><code>层召</code></a>12V电源线接<a href="#层召"><code>层召</code></a>~<a href="#层召"><code>层召</code></a>的数据/电源线展开~<a href="#MPS1"><code>MPS1</code></a>至<a href="#P1板"><code>P1板</code></a>的电源线上无卡扣磁环~<a href="#MPS1"><code>MPS1</code></a>=CUT75-522/B(高速梯使用)~<a href="#层召"><code>层召</code></a>的数据/电源线上靠近<a href="#P1板"><code>P1板</code></a>处加1卡扣磁环，绕2圈~</p>
 </li>
 <li>
-<p><strong>步骤依据：</strong>加磁环可能会有改善</p>
+<p><strong>步骤依据：</strong>在发射源处加磁环可能会有改善</p>
 </li>
 <li>
-<p><strong>测试结果：</strong></p>
+<p><strong>测试结果：</strong>40~50MHz间有明显的改善</p>
 </li>
 <li>
-<p><strong>测试小结：</strong></p>
+<p><strong>测试小结：</strong>在CAN线/电源线上加磁环(靠近发射源，即P1板)，会有较大的改善。</p>
 </li>
 </ul>
-<p><img src=".\photos\STEP_8.png" alt="STEP8" /></p>
+<p><img src=".\images\STEP_8.png" alt="STEP8" /></p>
 <h4>STEP 9</h4>
 <ul>
 <li>
 <p><strong>测试条件描述：</strong><a href="#层召"><code>层召</code></a>12V电源线连在<a href="#MPS1"><code>MPS1</code></a>上~<a href="#层召"><code>层召</code></a>12V电源线接<a href="#层召"><code>层召</code></a>~<a href="#层召"><code>层召</code></a>的数据/电源线展开~<a href="#MPS1"><code>MPS1</code></a>至<a href="#P1板"><code>P1板</code></a>的电源线上无卡扣磁环~<a href="#MPS1"><code>MPS1</code></a>=CUT75-522/B(高速梯使用)~<a href="#层召"><code>层召</code></a>的数据/电源线上靠近<a href="#层召"><code>层召</code></a>处加1卡扣磁环，绕1圈~</p>
 </li>
 <li>
-<p><strong>步骤依据：</strong></p>
+<p><strong>步骤依据：</strong>测试在接收源处加磁环是否有同样的效果</p>
 </li>
 <li>
 <p><strong>测试结果：</strong>几乎没用</p>
 </li>
 <li>
-<p><strong>测试小结：</strong></p>
+<p><strong>测试小结：</strong>在CAN线/电源线上加磁环(靠近接收源，即层召)，仅有一点点改善，说明针对天线的发射，要在发射源处加磁环吸收干扰才有比较好的效果。</p>
 </li>
 </ul>
-<p><img src=".\photos\STEP_9.png" alt="STEP9" /></p>
+<p><img src=".\images\STEP_9.png" alt="STEP9" /></p>
 <h4>STEP 10</h4>
 <ul>
 <li>
 <p><strong>测试条件描述：</strong><a href="#层召"><code>层召</code></a>12V电源线连在<a href="#MPS1"><code>MPS1</code></a>上~<a href="#层召"><code>层召</code></a>12V电源线接<a href="#层召"><code>层召</code></a>~<a href="#层召"><code>层召</code></a>的数据/电源线展开~<a href="#MPS1"><code>MPS1</code></a>至<a href="#P1板"><code>P1板</code></a>的电源线上无卡扣磁环~<a href="#MPS1"><code>MPS1</code></a>=CUT75-522/B(高速梯使用)~<a href="#层召"><code>层召</code></a>的数据/电源线上靠近<a href="#层召"><code>层召</code></a>处加1卡扣磁环，绕2圈~</p>
 </li>
 <li>
-<p><strong>步骤依据：</strong></p>
+<p><strong>步骤依据：</strong>测试如果加磁环效果不明显，增加圈数是否会有较好的效果</p>
 </li>
 <li>
-<p><strong>测试结果：</strong>完全没用</p>
+<p><strong>测试结果：</strong>有进一步的改善。</p>
 </li>
 <li>
-<p><strong>测试小结：</strong></p>
+<p><strong>测试小结：</strong>说明即使在接收源处加磁环效果不明显，但是增加磁环圈数还是有好处的。</p>
 </li>
 </ul>
-<p><img src=".\photos\STEP_10.png" alt="STEP10" /></p>
+<p><img src=".\images\STEP_10.png" alt="STEP10" /></p>
 <hr />
 <h1>部件表：</h1>
 <ul>
+<li><span id=层召><code>层召</code></span>：向暗室借用的层召，+12V供电</li>
+</ul>
+<p><img src=".\images\part_1.jpg" alt="part_1_1" /></p>
+<ul>
+<li><span id=层召12V电源线><code>层召12V电源线</code></span>：在MPS1向P1板供电的电源线上抽头2根，作为层召的电源线</li>
+</ul>
+<p><img src=".\images\part_2.jpg" alt="part_2_1" /></p>
+<ul>
+<li><span id=P1板><code>P1板</code></span>：P203778B000</li>
+</ul>
+<p><img src=".\images\part_3_1.jpg" alt="part_3_1" /></p>
+<ul>
+<li><span id=MPS1><code>MPS1</code></span>：为P1板和层召供电的电源，在本次测试中使用了三款电源，分别是SWT30-522/AMI HFP(扶梯使用)、RT-3-522(LEHY-III使用)以及CUT75-522/B(高速梯使用)</li>
+</ul>
+<p><img src=".\images\part_4_1.jpg" alt="part_4_1" />
+<img src=".\images\part_4_2.jpg" alt="part_4_2" />
+<img src=".\images\part_4_3.jpg" alt="part_4_3" /></p>
+<hr />
+<h1>措施表：</h1>
+<ul>
+<li><a href="#层召"><code>层召</code></a>12V电源线连在<a href="#MPS1"><code>MPS1</code></a>上</li>
+</ul>
+<p><img src=".\images\action_1A_1.jpg" alt="action_1A_1" /></p>
+<ul>
 <li>
-<p><span id=层召><code>层召</code></span>：向暗室借用的层召，+12V供电</p>
+<p><a href="#层召"><code>层召</code></a>12V电源线不接<a href="#层召"><code>层召</code></a></p>
 </li>
 <li>
-<p><span id=层召12V电源线><code>层召12V电源线</code></span>：在MPS1向P1板供电的电源线上抽头2根，作为层召的电源线</p>
+<p><a href="#层召"><code>层召</code></a>12V电源线不连在<a href="#MPS1"><code>MPS1</code></a>上</p>
+</li>
+</ul>
+<p><img src=".\images\action_1B_1.jpg" alt="action_1B_1" /></p>
+<ul>
+<li>
+<p><a href="#层召"><code>层召</code></a>12V电源线接<a href="#层召"><code>层召</code></a></p>
 </li>
 <li>
-<p><span id=P1板><code>P1板</code></span>：P203778B000</p>
+<p><a href="#MPS1"><code>MPS1</code></a>至<a href="#P1板"><code>P1板</code></a>的电源线上无卡扣磁环</p>
 </li>
 <li>
-<p><span id=MPS1><code>MPS1</code></span>：为P1板和层召供电的电源，在本次测试中使用了三款电源，分别是SWT30-522/AMI HFP(扶梯使用)、RT-3-522(LEHY-III使用)以及CUT75-522/B(高速梯使用)</p>
+<p><a href="#MPS1"><code>MPS1</code></a>至<a href="#P1板"><code>P1板</code></a>的电源线上有2个卡扣磁环</p>
+</li>
+</ul>
+<p><img src=".\images\action_2B_1.jpg" alt="action_2B_1" /></p>
+<ul>
+<li>
+<p><a href="#MPS1"><code>MPS1</code></a>=SWT30-522/AMI HFP(扶梯使用)</p>
+</li>
+<li>
+<p><a href="#MPS1"><code>MPS1</code></a>=RT-3-522(LEHY-III使用)</p>
+</li>
+<li>
+<p><a href="#MPS1"><code>MPS1</code></a>=CUT75-522/B(高速梯使用)</p>
+</li>
+<li>
+<p><a href="#层召"><code>层召</code></a>的数据/电源线不展开</p>
+</li>
+</ul>
+<p><img src=".\images\action_4A_1.jpg" alt="action_4A_1" /></p>
+<ul>
+<li><a href="#层召"><code>层召</code></a>的数据/电源线展开</li>
+</ul>
+<p><img src=".\images\action_4B_1.jpg" alt="action_4B_1" /></p>
+<ul>
+<li>
+<p><a href="#层召"><code>层召</code></a>的数据/电源线上无磁环</p>
+</li>
+<li>
+<p><a href="#层召"><code>层召</code></a>的数据/电源线上靠近<a href="#P1板"><code>P1板</code></a>处加1卡扣磁环，绕2圈</p>
+</li>
+<li>
+<p><a href="#层召"><code>层召</code></a>的数据/电源线上靠近<a href="#层召"><code>层召</code></a>处加1卡扣磁环，绕1圈</p>
+</li>
+<li>
+<p><a href="#层召"><code>层召</code></a>的数据/电源线上靠近<a href="#层召"><code>层召</code></a>处加1卡扣磁环，绕2圈</p>
+</li>
+<li>
+<p>拔去<a href="#层召"><code>层召</code></a>的N2插件，仅保留<a href="#层召"><code>层召</code></a>的数据/电源线连接在<a href="#P1板"><code>P1板</code></a>上的HS端口作为天线</p>
 </li>
 </ul>
 

@@ -2,7 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc5df489-640d-4e56-aa6e-5c7ce4d63311" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/action_1A_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/action_1B_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/action_2B_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/action_4A_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/action_4B_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/part_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/part_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/part_3_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/part_4_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/part_4_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/part_4_3.jpg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SmecEmcReport/doc2png.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/data/STEP_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/data/STEP_10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/data/STEP_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/data/STEP_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/data/STEP_4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/data/STEP_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/data/STEP_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/data/STEP_7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/data/STEP_8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/data/STEP_9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/data/decimal_specs.pkl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/data/test.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/photos/part_3_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/photos/part_4_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/photos/part_4_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/photos/part_4_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/report.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmecEmcReport/gather_data.py" afterPath="$PROJECT_DIR$/SmecEmcReport/gather_data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmecEmcReport/make_report.py" afterPath="$PROJECT_DIR$/SmecEmcReport/make_report.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/actions.txt" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/actions.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/parts.txt" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/parts.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/report.html" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/report.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/report.md" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/report.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/steps.txt" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/steps.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/testdata/DCDC/photos/IMG_20151102_152112.jpg" afterPath="$PROJECT_DIR$/testdata/DCDC/images/IMG_20151102_152112.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/photos/STEP_10.png" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/STEP_10.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/photos/STEP_2.png" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/STEP_2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/photos/STEP_3.png" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/STEP_3.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/photos/STEP_4.png" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/STEP_4.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/photos/STEP_5.png" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/STEP_5.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/photos/STEP_6.png" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/STEP_6.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/photos/STEP_7.png" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/STEP_7.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/photos/STEP_8.png" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/STEP_8.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/photos/STEP_9.png" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/STEP_9.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/photos/step_1.png" afterPath="$PROJECT_DIR$/testdata/MPS1_P1_CAN/images/STEP_1.png" />
     </list>
     <ignored path="SMEC_EMC_FIG.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -16,9 +64,10 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/SMEC_EMC_FIG$doc2png.coverage" NAME="doc2png Coverage Results" MODIFIED="1447319760749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SmecEmcReport" />
     <SUITE FILE_PATH="coverage/SMEC_EMC_FIG$SMEC_EMC_FIG.coverage" NAME="SMEC_EMC_FIG Coverage Results" MODIFIED="1447052950749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SMEC_EMC_FIG" />
-    <SUITE FILE_PATH="coverage/SMEC_EMC_FIG$make_report.coverage" NAME="make_report Coverage Results" MODIFIED="1447149179654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SmecEmcReport" />
-    <SUITE FILE_PATH="coverage/SMEC_EMC_FIG$gather_data.coverage" NAME="gather_data Coverage Results" MODIFIED="1447149945312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SmecEmcReport" />
+    <SUITE FILE_PATH="coverage/SMEC_EMC_FIG$make_report.coverage" NAME="make_report Coverage Results" MODIFIED="1448343718127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SmecEmcReport" />
+    <SUITE FILE_PATH="coverage/SMEC_EMC_FIG$gather_data.coverage" NAME="gather_data Coverage Results" MODIFIED="1447203052469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SmecEmcReport" />
     <SUITE FILE_PATH="coverage/SMEC_EMC_FIG$datachk.coverage" NAME="datachk Coverage Results" MODIFIED="1447120231111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SMEC_EMC_FIG" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -30,11 +79,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gather_data.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gather_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SmecEmcReport/gather_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18973215">
-              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="91" column="38" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
               <folding>
                 <element signature="e#25#62#0" expanded="true" />
               </folding>
@@ -42,14 +91,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="make_report.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="make_report.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SmecEmcReport/make_report.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7676768">
+              <caret line="68" column="45" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
               <folding>
-                <element signature="e#21#30#0" expanded="true" />
+                <element signature="e#21#34#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__future__.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Python27/Lib/__future__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__builtin__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharm50/system/python_stubs/-762174762/__builtin__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="500" column="5" selection-start-line="500" selection-start-column="5" selection-end-line="500" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,8 +133,9 @@
       <list>
         <option value="$PROJECT_DIR$/SMEC_EMC_FIG/SMEC_EMC_FIG.py" />
         <option value="$PROJECT_DIR$/SMEC_EMC_FIG/datachk.py" />
-        <option value="$PROJECT_DIR$/SmecEmcReport/make_report.py" />
+        <option value="$PROJECT_DIR$/SmecEmcReport/doc2png.py" />
         <option value="$PROJECT_DIR$/SmecEmcReport/gather_data.py" />
+        <option value="$PROJECT_DIR$/SmecEmcReport/make_report.py" />
       </list>
     </option>
   </component>
@@ -76,7 +146,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="width" value="1932" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -104,6 +175,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SMEC_EMC_FIG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SMEC_EMC_FIG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmecEmcReport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SMEC_EMC_FIG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmecEmcReport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmecEmcReport" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Changed Files">
@@ -149,43 +257,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches">
-        <subPane />
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SMEC_EMC_FIG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SMEC_EMC_FIG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmecEmcReport" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SMEC_EMC_FIG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmecEmcReport" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmecEmcReport" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -195,10 +266,11 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="SearchEverywhereHistoryKey" value="__future__&#9;null&#9;null&#10;comment&#9;ACTION&#9;ExpandDocComments" />
   </component>
-  <component name="RunManager" selected="Python.gather_data">
+  <component name="RunManager" selected="Python.make_report">
     <configuration default="false" name="SMEC_EMC_FIG" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -269,6 +341,24 @@
       <module name="SMEC_EMC_FIG" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SmecEmcReport/gather_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="doc2png" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SmecEmcReport" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SMEC_EMC_FIG" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SmecEmcReport/doc2png.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -466,18 +556,20 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.SMEC_EMC_FIG" />
       <item index="1" class="java.lang.String" itemvalue="Python.datachk" />
       <item index="2" class="java.lang.String" itemvalue="Python.make_report" />
       <item index="3" class="java.lang.String" itemvalue="Python.gather_data" />
+      <item index="4" class="java.lang.String" itemvalue="Python.doc2png" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.gather_data" />
-        <item index="1" class="java.lang.String" itemvalue="Python.make_report" />
-        <item index="2" class="java.lang.String" itemvalue="Python.datachk" />
-        <item index="3" class="java.lang.String" itemvalue="Python.SMEC_EMC_FIG" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.make_report" />
+        <item index="1" class="java.lang.String" itemvalue="Python.doc2png" />
+        <item index="2" class="java.lang.String" itemvalue="Python.gather_data" />
+        <item index="3" class="java.lang.String" itemvalue="Python.datachk" />
+        <item index="4" class="java.lang.String" itemvalue="Python.SMEC_EMC_FIG" />
       </list>
     </recent_temporary>
   </component>
@@ -494,30 +586,39 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1932" height="1056" extended-state="1" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2820513" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15831557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39915523" sideWeight="0.5020877" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25587606" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39675677" sideWeight="0.49791232" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756758" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39783785" sideWeight="0.49791232" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -544,11 +645,6 @@
           <line>82</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/SmecEmcReport/gather_data.py</url>
-          <line>73</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -557,15 +653,55 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="25" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="re.match(re_str, u'P1_10.png')" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/SmecEmcReport/gather_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="88" column="59" selection-start-line="88" selection-start-column="59" selection-end-line="88" selection-end-column="59" />
+          <folding>
+            <element signature="e#25#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmecEmcReport/make_report.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#21#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/__future__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm50/system/python_stubs/-762174762/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="500" column="5" selection-start-line="500" selection-start-column="5" selection-end-line="500" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmecEmcReport/gather_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="9" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
           <folding>
             <element signature="e#25#62#0" expanded="true" />
           </folding>
@@ -577,7 +713,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <element signature="e#21#30#0" expanded="true" />
+            <element signature="e#21#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -597,7 +733,47 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <element signature="e#21#30#0" expanded="true" />
+            <element signature="e#21#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmecEmcReport/gather_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmecEmcReport/make_report.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#21#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmecEmcReport/gather_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmecEmcReport/make_report.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#21#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -666,13 +842,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testdata/MPS1_P1_CAN/report.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15765765">
           <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testdata/MPS1_P1_CAN/report.html">
@@ -691,28 +867,36 @@
     </entry>
     <entry file="file://$USER_HOME$/.PyCharm50/system/python_stubs/-762174762/__builtin__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34189945">
-          <caret line="594" column="19" selection-start-line="594" selection-start-column="19" selection-end-line="594" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="500" column="5" selection-start-line="500" selection-start-column="5" selection-end-line="500" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmecEmcReport/make_report.py">
+    <entry file="file://C:/Python27/Lib/__future__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#30#0" expanded="true" />
-          </folding>
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SmecEmcReport/gather_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18973215">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="38" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
           <folding>
             <element signature="e#25#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmecEmcReport/make_report.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7676768">
+          <caret line="68" column="45" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
+          <folding>
+            <element signature="e#21#34#0" expanded="true" />
           </folding>
         </state>
       </provider>

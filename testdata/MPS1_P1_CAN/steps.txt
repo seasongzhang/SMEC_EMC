@@ -5,7 +5,6 @@ step_reason:初始实验
 step_outputfile:P1_1
 step_result:(42)
 step_summary:扶梯用的MPS1电源辐射发射较强。
-step_spectrum:
 
 step_sequence:2
 step_ref:1
@@ -14,7 +13,6 @@ step_reason:对比测试在+12V/GND上分别接一根20~30cm长的电线（短�
 step_outputfile:P1_2
 step_result:(41)
 step_summary:STEP1中，MPS1上接了两根电源线（终端开路作为天线），从测试结果看，似乎确实天线效应在41MHz附近导致了更高的发射。但是，仅仅约2dB的差距不足以说明问题，仅供参考。
-step_spectrum:
 
 step_sequence:3
 step_ref:2
@@ -23,7 +21,6 @@ step_reason:测试在MPS1和P1板之间的电源上加卡扣磁环(X46CC-11)的�
 step_outputfile:P1_3
 step_result:有较好的改善
 step_summary:说明为P1板供电的电源线(包括MPS1)有较大辐射，干扰会通过电源线进入P1板，加卡扣磁环略有效果
-step_spectrum:
 
 step_sequence:4
 step_ref:2
@@ -32,7 +29,6 @@ step_reason:换个MPS1试试
 step_outputfile:P1_4
 step_result:非常好！
 step_summary:LEHY-III的MPS1虽然效率不高且价格贵，但EMC发射性能出众，可能是因为开关速度较慢。
-step_spectrum:
 
 step_sequence:5
 step_ref:2,4
@@ -41,7 +37,6 @@ step_reason:再换个MPS1
 step_outputfile:P1_5
 step_result:与另两个MPS1相比，效果居中。
 step_summary:高速梯用的MPS1还可以。
-step_spectrum:
 
 step_sequence:6
 step_ref:5
@@ -50,7 +45,6 @@ step_reason:测试CAN的发射
 step_outputfile:P1_6
 step_result:在40MHz附近，接了层召之后有约15dB的恶化
 step_summary:层召及其数据/电源线的影响很大
-step_spectrum:
 
 step_sequence:7
 step_ref:6
@@ -59,7 +53,6 @@ step_reason:层召线展开可能引起恶化
 step_outputfile:P1_7
 step_result:40MHz的峰值移到41MHz，但峰值未变
 step_summary:单纯通过改变线的位置，在某些频段的可能会有改善，但要小心陷阱，可能在另一个频段恶化。
-step_spectrum:
 
 step_sequence:8
 step_ref:7
@@ -68,7 +61,6 @@ step_reason:在发射源处加磁环可能会有改善
 step_outputfile:P1_8
 step_result:40~50MHz间有明显的改善
 step_summary:在CAN线/电源线上加磁环(靠近发射源，即P1板)，会有较大的改善。
-step_spectrum:
 
 step_sequence:9
 step_ref:7
@@ -77,7 +69,6 @@ step_reason:测试在接收源处加磁环是否有同样的效果
 step_outputfile:P1_9
 step_result:几乎没用
 step_summary:在CAN线/电源线上加磁环(靠近接收源，即层召)，仅有一点点改善，说明针对天线的发射，要在发射源处加磁环吸收干扰才有比较好的效果。
-step_spectrum:
 
 step_sequence:10
 step_ref:7,8,9
@@ -86,4 +77,3 @@ step_reason:测试如果加磁环效果不明显，增加圈数是否会有较�
 step_outputfile:P1_10
 step_result:有进一步的改善。
 step_summary:说明即使在接收源处加磁环效果不明显，但是增加磁环圈数还是有好处的。
-step_spectrum:

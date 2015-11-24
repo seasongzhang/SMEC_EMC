@@ -1,50 +1,17 @@
 part_number:1
 part_name:层召
 part_description:向暗室借用的层召，+12V供电
-part_photos:
 
 part_number:2
 part_name:层召12V电源线
 part_description:在MPS1向P1板供电的电源线上抽头2根，作为层召的电源线
-part_photos:
 
 part_number:3
 part_name:P1板
 part_description:P203778B000
-part_photos:
 
 part_number:4
 part_name:MPS1
 part_description:为P1板和层召供电的电源，在本次测试中使用了三款电源，分别是SWT30-522/AMI HFP(扶梯使用)、RT-3-522(LEHY-III使用)以及CUT75-522/B(高速梯使用)
-part_photos:part_4_1
 
-part_number:
-part_name:
-part_description:
-part_photos:
-
-part_number:
-part_name:
-part_description:
-part_photos:
-
-part_number:
-part_name:
-part_description:
-part_photos:
-
-part_number:
-part_name:
-part_description:
-part_photos:
-
-part_number:
-part_name:
-part_description:
-part_photos:
-
-part_number:
-part_name:
-part_description:
-part_photos:
 
