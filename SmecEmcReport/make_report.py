@@ -36,13 +36,14 @@ class ReportMaker(object):
                     try:
                         assert line.startswith(args[n % len(args)])
                     except AssertionError:
+                        print(n, len(args), line)
                         print("Wrong format of data in " + file_name + ", number " + str((n % len(args)) + 1))
                     else:
                         items.append(line.split(":")[1].strip())
             items = [items[n:n + len(args)] for n in xrange(0, len(items), len(args))]
             return items
         else:
-            print(file_name + " does not exist. Creat one.")
+            print(file_name + " does not exist. Create one.")
             with codecs.open(os.path.join(self.dir_path, file_name), "w", encoding='utf-8') as f:
                 for n in range(10):
                     for s in args:
@@ -53,8 +54,7 @@ class ReportMaker(object):
     def gather_infos(self):
         self.parts = self.read_info("parts.txt", "part_number", "part_name", "part_description")
         self.actions = self.read_info("actions.txt", "action_number", "action_description")
-        self.steps = self.read_info("steps.txt", "step_sequence", "step_ref", "step_description", "step_reason",
-                                "step_outputfile", "step_result", "step_summary")
+        self.steps = self.read_info("steps.txt", "step_sequence", "step_ref", "step_description", "step_reason", "step_outputfile", "step_result", "step_summary")
         self.project = self.read_info("project.txt", "project_date", "project_description", "project_summary")
 
     def compare_plot(self):
@@ -88,6 +88,7 @@ class ReportMaker(object):
             pl.grid(b=True, which='both')
             pl.legend()
             pl.savefig(plot_name)
+            pl.close('all')
 
     def make_markdown(self):
 
@@ -146,14 +147,8 @@ class ReportMaker(object):
                     f.write(u'![action_'+action[0]+'_'+str(n+1)+u'](.\\images\\' + ap + u')')
                 f.write('\r\n'*2)
 
-
-
-
-
-
-
 if __name__ == "__main__":
-    chker = ReportMaker(ur"E:\SeaGit\SmecEmcReport\testdata\MPS1_P1_CAN")
+    chker = ReportMaker(u"C:\\Users\\zhangx.SMECEIS\\Desktop\\EMC_RECORDS\\CS_JT150795B000G99")
     chker.gather_infos()
     chker.compare_plot()
     chker.make_markdown()
