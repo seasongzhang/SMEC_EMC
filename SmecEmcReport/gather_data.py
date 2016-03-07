@@ -3,10 +3,11 @@
 from __future__ import print_function
 from __future__ import unicode_literals
 
-from PIL import Image
-import pickle
 import os
+import pickle
 import re
+
+from PIL import Image
 
 
 class SpecReader:
@@ -19,6 +20,7 @@ class SpecReader:
     def read_spec_from_png(self, file_path, save2txt=False):
         """
             Read image(png) into python and crop useful window and name it 'region'.
+            :type file_path:
             :param save2txt:
             :return:
         """
@@ -29,8 +31,11 @@ class SpecReader:
 
         im = Image.open(file_path)
 
-        assert im.size[0] == 3197
-        assert im.size[1] == 2455
+        try:
+            assert im.size[0] == 3197
+            assert im.size[1] == 2455
+        except AssertionError:
+            pass
 
         region = im.crop(CROP_BOX)
         region_data = list(region.getdata())  # get RGB value for each pixel
@@ -65,7 +70,7 @@ class SpecReader:
         decimal_spectrum = [(10 ** (xy[0] / 1300.0) * 30, (46 - (xy[1] - 632) / pixels_per_dB)) for xy in peak_list]
 
         # Write decimal_spectrum to a txt file
-        if save2txt == True:
+        if save2txt:
             with open(os.path.splitext(file_path)[0] + ".txt", "w") as f:
                 for sp in decimal_spectrum:
                     print('%(freq).2f %(dB).2f' % {'freq': sp[0], 'dB': sp[1]}, file=f, sep='')

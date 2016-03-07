@@ -1,13 +1,13 @@
 ﻿# -*-coding:utf-8-*-
 import codecs
 import os
-import pickle
 import re
 
 import matplotlib.pyplot as pl
 import numpy
 
 import gather_data
+
 
 class ReportMaker(object):
     """
@@ -31,7 +31,7 @@ class ReportMaker(object):
         if os.path.exists(os.path.join(self.dir_path, file_name)):
             items = []
             with codecs.open(os.path.join(self.dir_path, file_name), encoding='utf-8') as f:
-                lines = [line for line in f.readlines() if not line == "\r\n"]
+                lines = [line for line in f.readlines() if (not line == "\r\n") and (not line == "\n")]
                 for (n, line) in enumerate(lines):
                     try:
                         assert line.startswith(args[n % len(args)])
@@ -148,7 +148,7 @@ class ReportMaker(object):
                 f.write('\r\n'*2)
 
 if __name__ == "__main__":
-    chker = ReportMaker(u"C:\\Users\\zhangx.SMECEIS\\Desktop\\EMC_RECORDS\\CS_JT150795B000G99")
+    chker = ReportMaker(u"C:\\Users\\zhangx.SMECEIS\\Desktop\\EMC_RECORDS\\LEHY-H-SEP")
     chker.gather_infos()
     chker.compare_plot()
     chker.make_markdown()
