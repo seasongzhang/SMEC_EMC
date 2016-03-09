@@ -148,7 +148,7 @@ class ReportMaker(object):
                 f.write('\r\n'*2)
 
 if __name__ == "__main__":
-    chker = ReportMaker(u"C:\\Users\\zhangx.SMECEIS\\Desktop\\EMC_RECORDS\\LEHY-H-SEP")
+    chker = ReportMaker(u"C:\\Users\\zhangx.SMECEIS\\Desktop\\EMC_RECORDS\\LEHY-H-SEP3")
     chker.gather_infos()
     chker.compare_plot()
     chker.make_markdown()
